@@ -64,8 +64,8 @@ header {
 }
 
 .main-logo {
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
     opacity: 0.7;
     border-radius: 50%;
 }
@@ -92,19 +92,6 @@ header {
     font-size: 70px;
 }
 
-button {
-    padding: 5px 10px;
-    margin: 0 5px;
-    border: none;
-    border-radius: 6px;
-    font-size: 18px;
-    background-color: #e84118;
-    font-family: 'Assistant', sans-serif;
-    outline: none;
-    color: white;
-    cursor: pointer;
-}
-
 @media screen and (max-width: 560px) {
 
     header {
@@ -112,6 +99,12 @@ button {
         height: 420px;
         padding-bottom: 30px;
     }
+
+    .main-logo {
+        width: 120px;
+        height: 120px; 
+    }
+
     .nav-bar {
         flex-direction: column;
         align-items: center;
@@ -230,13 +223,19 @@ button {
 
 .app-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: start;
+}
+
+.app-container h3 {
+    align-content: center;
 }
 
 .app-view, .app-stores {
     margin-top: 100px;
-    width: 200px;
+    padding: 0 10px;
+    width: 100px;
     object-fit: contain;
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 450px) {
